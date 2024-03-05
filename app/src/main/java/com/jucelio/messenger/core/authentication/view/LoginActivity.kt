@@ -8,6 +8,7 @@ import com.jucelio.messenger.R
 
 interface LoginCallback{
     fun onCreateAccountClicked()
+    fun onLoginClicked()
 }
 class LoginActivity : AppCompatActivity(),LoginCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,5 +23,9 @@ class LoginActivity : AppCompatActivity(),LoginCallback {
             replace(R.id.fragment_container_view, fragment)
             addToBackStack(null)
         }
+    }
+
+    override fun onLoginClicked() {
+       supportFragmentManager.popBackStack()
     }
 }

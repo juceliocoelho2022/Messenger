@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.jucelio.messenger.R
 import com.jucelio.messenger.databinding.FragmentSignUpBinding
 
 class SignUpFragment : Fragment() {
@@ -30,6 +31,10 @@ class SignUpFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+         binding.toolbar.setNavigationIcon(R.drawable.baseline_arrow_back_24)
+        binding.toolbar.setNavigationOnClickListener{
+            loginCallback.onLoginClicked()
+        }
 
     }
     override fun onDestroyView() {
