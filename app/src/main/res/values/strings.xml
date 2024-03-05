@@ -2,7 +2,9 @@
     <string name="app_name">Messenger</string>
     <string name="email">E-mail</string>
     <string name="password">Password</string>
-    <string name="login">Login\n</string>
+    <string name="login">Log in\n</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="create_new_account">Create new account</string>
+    <string name="fullname">Fullname</string>
+    <string name="signup">Sign up</string>
 </resources>
